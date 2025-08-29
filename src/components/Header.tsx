@@ -1,5 +1,6 @@
 import { Heart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
@@ -28,9 +29,9 @@ const Header = () => {
             <a href="#stories" className="text-foreground hover:text-primary transition-colors">
               Success Stories
             </a>
-            <a href="/adoptions" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/adoptions" className="text-foreground hover:text-primary transition-colors">
               Adoptions
-            </a>
+            </Link>
             <a href="#volunteer" className="text-foreground hover:text-primary transition-colors">
               Volunteer
             </a>
@@ -73,13 +74,13 @@ const Header = () => {
               >
                 Success Stories
               </a>
-              <a 
-                href="/adoptions" 
+              <Link
+                to="/adoptions" 
                 className="text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Adoptions
-              </a>
+              </Link>
               <a 
                 href="#volunteer" 
                 className="text-foreground hover:text-primary transition-colors"
