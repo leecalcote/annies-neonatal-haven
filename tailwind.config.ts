@@ -112,8 +112,7 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-warm': 'var(--gradient-warm)',
-				'gradient-sunset': 'var(--gradient-sunset)',
-				'gradient-soft': 'var(--gradient-warm)'
+				'gradient-sunset': 'var(--gradient-sunset)'
 			}
 		}
 	},
